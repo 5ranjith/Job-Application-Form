@@ -1,0 +1,194 @@
+<center><h1>Job Application Form</h1></center>
+
+<form>
+  <fieldset>
+    <table>
+      <legend>Personal Information</legend>
+      <tr>
+        <td>
+          <label for="firstname">First Name*</label>
+        </td>
+        <td>
+          <input type="text" name="First_Name" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Last Name*</label></td>
+        <td>
+          <input type="text" name="Last_Name" required />
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="">DOB</label></td>
+        <td>
+          <input type="date" name="_dob" required />
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="">Gender</label></td>
+        <td>
+          <input type="radio" name="Gender" value="Male" required />Male
+          <input type="radio" name="Gender" value="Female" /> FeMale
+          <input type="radio" name="Gender" value="Others" />Others
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="">Profile Picture*</label></td>
+        <td>
+          <input type="file" name="pic" required />
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+    <table>
+      <legend>Contact Information</legend>
+      <tr>
+        <td><label for="">Email*</label></td>
+        <td>
+          <input type="email" name="_email" required />
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="">Phone Number*</label></td>
+        <td>
+          <input
+            type="tel"
+            name="_mobnum"
+            maxlength="10"
+            placeholder="10-digit number"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="">Address*</label></td>
+        <td>
+          <input type="text" name="_address" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Select Country</label></td>
+        <td>
+          <select name="country" id="">
+            <option value="IND">INDIA</option>
+            <option value="USA">USA</option>
+            <option value="AUS">AUSTRALIA</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <table>
+      <legend>Educational Background</legend>
+      <tr>
+        <td><label for="">Highest Qualification</label></td>
+        <td>
+          <select name="Higest Graduation">
+            <option value="Masters">Master Degree</option>
+            <option value="bachelor">Bachelor Degree</option>
+            <option value="puc">PUC</option>
+            <option value="sslc">SSLC</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Specalisation</label></td>
+        <td>
+          <input type="text" name="specalisation" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Year Of Passing</label></td>
+        <td>
+          <input type="number" name="_yop" required />
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+    <table>
+      <legend>Job Prefrences</legend>
+      <tr>
+        <td><label for="">Preferred Role</label></td>
+        <td>
+          <input type="text" name="_Prole" required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">Expected Salary</label></td>
+        <td>
+          <input
+            type="num"
+            name="_salary"
+            required
+            minlength="5"
+            maxlength="7"
+          />
+        </td>
+      </tr>
+      <label>Preferred Location</label>
+      <input type="checkbox" name="_Plocation" value="Banglore" />Banglore
+      <input type="checkbox" name="_Plocation" value="Mysore" />Mysore
+      <input type="checkbox" name="_Plocation" value="Coimbotore" />Coimbotore
+      <input type="checkbox" name="_Plocation" value="Hyderabad" />Hyderabad
+      <tr>
+        <td><label>Willing To Relocate?</label></td>
+        <td><input type="checkbox" name="_relocate" value="yes/no" /></td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+    <table>
+      <legend>Create an Account</legend>
+      <tr>
+        <td><label>Password</label></td>
+        <td>
+          <input
+            type="password"
+            name="_password"
+            minlength="min 6 characters"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label>Create Password</label></td>
+        <td><input type="password" name="_confirm_password" required /></td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+    <table>
+      <legend>Resume</legend>
+      <tr>
+        <td><label>Upload Resume(pdf only)</label></td>
+        <td><input type="file" name="_resume" required /></td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+    <table>
+      <legend>Agreement</legend>
+      <tr>
+        <td>
+          <input type="checkbox" value="yes/no" name="_checkbox" required /> I
+          agree to the terms and conditions
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="submit application" name="_submit" />
+
+          <input type="reset" value="Reset Form" name="_reset" />
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
